@@ -1,31 +1,14 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-
-    <!-- ES6-related imports -->
-    <script src="lib/traceur-runtime.js"></script>
-    <script src="lib/es6-module-loader-sans-promises.src.js"></script>
-    <script src="lib/extension-register.js"></script>
-    <script>
-        register(System);
-    </script>
-    <script src="lib/Reflect.js"></script>
-
-    <!-- Angular2-related imports -->
-    <script src="lib/zone.js"></script>
-    <script src="lib/long-stack-trace-zone.js"></script>
-    <script src="lib/angular2.js"></script>
+    <meta charset="utf-8">
+    <title>Angular 2 ES5 demo</title>
+    <script src="/lib/angular2.sfx.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
-    <hello>
-        Loading...
-    </hello>
+
+<app></app>
+
 </body>
-
-<!-- Application bootstrap logic -->
-<script>
-    System.import('hello').catch(console.log.bind(console));
-</script>
-
 </html>
