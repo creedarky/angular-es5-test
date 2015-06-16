@@ -39,47 +39,7 @@ Clicker.annotations = [
   })
 ];
 
-//function InputBinding() {
-//  var inputBinding = this;
-//  inputBinding.text = '';
-//  inputBinding.customEventCount = 0;
-//
-//  var input = document.querySelector("#input");
-//  setInterval(function() {
-//
-//    input.dispatchEvent(new Event("custom"));
-//
-//  }, 1000);
-//
-//  inputBinding.keyUp = function(value) {
-//    inputBinding.text = value;
-//  };
-//
-//  inputBinding.custom = function() {
-//    inputBinding.customEventCount++;
-//  };
-//
-//
-//}
-//
-//InputBinding.annotations = [
-//  new angular.ComponentAnnotation({
-//    selector: "input-binding"
-//  }),
-//  new angular.ViewAnnotation({
-//    template: '<div>' +
-//        '<label>Input text</label>' +
-//        '<input id="input" type="text" #ref (custom)="custom()" value="" (onkeyup)="keyUp(ref)"> ' +
-//        '<hr/>' +
-//        '<h1 [style.color]="ref.value">' +
-//        'value = {{#ref.value}}<br/>' +
-//        'this.text= {{text}}<br/>' +
-//        'this.customeventCount = {{customEventCount}}<br/></h1>' +
-//      '</div>'
-//  })
-//
-//
-//];
+
 
 function App(){}
 App.annotations = [
